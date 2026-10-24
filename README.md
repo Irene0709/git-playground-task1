@@ -8,17 +8,16 @@ A tiny command-line notes tool, used as the practice repo for Unit 4 (Git). The 
 - `node notes.js delete <id>` — delete a note
 
 Layout: `notes.js` is the entry point, `lib/store.js` loads and saves notes (in `notes.json`), and `lib/config.js` holds app settings.
-
-### Set up
+### Set up - DONE
 1. Make sure you have your own copy of this repo (created from the lesson on the platform).
 2. Clone it locally, and run `gh auth login` so Claude can open pull requests through the `gh` CLI.
 3. Open Claude Code in the cloned folder.
 
-### Lesson 1 task — let Claude read your repo
+### Lesson 1 task — let Claude read your repo - DONE
 Goal: instead of reading a diff yourself, have Claude tell you what changed, then commit a summary.
 
-1. Make a few small edits across a couple of files — change a line, add a short function, rename a variable. Slip in at least one change you might plausibly forget, like a stray edit in a second file.
-2. Create a file `notes.md` and write one line predicting what you changed, from memory.
+1. Make a few small edits across a couple of files — change a line, add a short function, rename a variable. Slip in at least one change you might plausibly forget, like a stray edit in a second file. DONE
+2. Create a file `notes.md` and write one line predicting what you changed, from memory. DONE
 3. Ask Claude: *'Summarize what I've changed, and flag anything that looks unintended.'* Paste its summary into `notes.md` under your prediction, then add a sentence on whether it caught the stray change.
 4. Have Claude commit `notes.md` on a new branch — tell it *'commit on a branch called `read-repo` and push it.'*
 5. Create a PR against the main repository, not your fork, and submit it.
